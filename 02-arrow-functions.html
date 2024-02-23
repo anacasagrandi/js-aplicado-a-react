@@ -13,7 +13,15 @@
 
 
     //1ª Digitação (aqui) 
+    // funçao sintaxe tradicional
+    function nomeDaFuncao() {
+      exibirNaTela('Função de sintaxe tradicional');
+    }
 
+    // Função anonima
+    var outraFuncao = function() {
+      exibirNaTela('Outra forma de declarar função')
+    }
 
 
     // Chamada da função
@@ -29,8 +37,11 @@
 
 
     //2ª Digitação (aqui) 
+    function exercicio(valor1,valor2) {
+      return valor1 - valor2;
+    }
 
-
+    let resultado = exercicio(109,33);
 
     exibirNaTela(resultado);
 
@@ -65,11 +76,33 @@
     /* Exercício 2
     - Monte uma arrow function que receba um nome de pessoa e a converta para letras maiúsculas.
     - Chame a função 3x (passando nomes diferentes) e exibindo no console e tela os resultados */
+  
+  //  const converterParaMaiusculas = nome => {
+  //    return nome.toUpperCase();
+  //  };
 
-    
+  //  const nome1 = "Gab silvete";
+  //  const nome2 = "Matheus preto";
+  //  const nome3 = "Lara fidida";
+
+  //  const resultado1 = converterParaMaiusculas(nome1);
+  //  const resultado2 = converterParaMaiusculas(nome2);
+  //  const resultado3 = converterParaMaiusculas(nome3);
+
+  //  console.log(resultado1);
+  //  console.log(resultado2);
+  //  console.log(resultado3);
+
+  //  document.write(`<p>${resultado1}</p>`);
+  //  document.write(`<p>${resultado2}</p>`);
+  //  document.write(`<p>${resultado3}</p>`);
 
     //3ª Digitação (aqui) 
-
+    let converterMaiuscula = nome => nome.toUpperCase();
+    
+    exibirNaTela(converterMaiuscula('Gab Silvete'));
+    exibirNaTela(converterMaiuscula('Matheus preto'));
+    exibirNaTela(converterMaiuscula('Lara Fidida'));
 
 
     function exibirNaTela(texto) {
